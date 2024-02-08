@@ -1,0 +1,14 @@
+{
+    "projects": [
+      {
+        "src": "Projects/PROJECT1.mp4",
+        "poster": "Projects/PROJECT1.jpg"
+        
+      },
+      {
+        "src": "AnotherVideo.mp4"
+       
+      }
+    
+    ]
+  }
