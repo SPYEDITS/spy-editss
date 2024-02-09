@@ -85,12 +85,12 @@ p {
 	background-color: crimson;
 }
 
-.brand h1 {
+.navbar-brand h1 {
 	font-size: 3rem;
 	text-transform: uppercase;
 	color: white;
 }
-.brand h1 span {
+.navbar-brand h1 span {
 	color: crimson;
 }
 
@@ -108,7 +108,7 @@ p {
 	background-color: rgba(31, 30, 30, 0.24);
 	transition: 0.3s ease background-color;
 }
-#header .nav-bar {
+#header .navbar {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -117,7 +117,7 @@ p {
 	max-width: 1300px;
 	padding: 0 10px;
 }
-#header .nav-list ul {
+#header .navbar-nav ul {
 	list-style: none;
 	position: absolute;
 	background-color: rgb(31, 30, 30);
@@ -133,10 +133,10 @@ p {
 	overflow-x: hidden;
 	transition: 0.5s ease left;
 }
-#header .nav-list ul.active {
+#header .navbar-nav ul.active {
 	left: 0%;
 }
-#header .nav-list ul a {
+#header  ul a {
 	font-size: 2.5rem;
 	font-weight: 500;
 	letter-spacing: 0.2rem;
@@ -146,7 +146,7 @@ p {
 	padding: 20px;
 	display: block;
 }
-#header .nav-list ul a::after {
+#header .navbar-nav ul a::after {
 	content: attr(data-after);
 	position: absolute;
 	top: 50%;
@@ -158,13 +158,53 @@ p {
 	z-index: -1;
 	transition: 0.3s ease letter-spacing;
 }
-#header .nav-list ul li:hover a::after {
+#header .navbar-nav ul li:hover a::after {
 	transform: translate(-50%, -50%) scale(1);
 	letter-spacing: initial;
 }
-#header .nav-list ul li:hover a {
+#header .navbar-nav  li:hover a {
 	color: crimson;
 }
+#nav-toggler-icon{
+	color: white;
+	font-size: 18px;
+	outline: none;
+	border: none	;
+	transition: color 0.3s ease;
+
+}
+.navbar-toggler{
+	
+	outline: none;
+	border: none	;
+	transition: color 0.3s ease;
+
+}
+.navbar-toggler:focus{
+	outline: none;
+	border: none;
+}	
+#nav-toggler-icon:hover{
+	color: crimson;
+}
+#nav-togglerr:focus{
+	outline: none;
+	border: none;
+}
+  /* Add transition and rotation to the icon */
+  .fa-bars, .fa-times {
+    transition: transform 0.3s ease;
+  }
+
+  /* Rotate the fa-bars icon by 90 degrees */
+  .fa-bars.rotate {
+    transform: rotate(90deg);
+  }
+
+  /* Rotate the fa-times icon by -90 degrees to rotate it back to its original position */
+  .fa-times.rotate {
+    transform: rotate(-90deg);
+  }
 
 /* End Header section */
 
