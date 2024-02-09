@@ -1,14 +1,79 @@
 {
     "projects": [
       {
-        "src": "Projects/PROJECT1.mp4",
+        "src": "Projects/Ahmed.mp4",
+        "poster": "https://i.postimg.cc/9X9SVqJr/Screenshot-2023-12-05-165511.png"
+        
+      },
+      {
+        "src": "Projects/PROJECT2.mp4",
         "poster": "Projects/PROJECT1.jpg"
         
       },
       {
-        "src": "AnotherVideo.mp4"
-       
+        "src": "Projects/PROJECT1.mp4",
+        "poster": "Projects/PROJECT1.jpg"
+        
       }
     
+    ]
+    ,
+    "logos": [
+      {
+        "name": "Client 1",
+        "url": "https://i.postimg.cc/fy43x5Hd/client-1.jpg",
+        "href": "https://www.youtube.com/@mashxmosh"
+      },
+      {
+        "name": "Client 2",
+        "url": "https://i.postimg.cc/BQB8KT28/client-2.jpg",
+        "href": "https://www.youtube.com/@Mud_2/videos"
+      },
+      {
+        "name": "Client 3",
+        "url": "https://i.postimg.cc/BvXtkRkD/client-3.jpg",
+        "href": "https://www.youtube.com/@R3DULZ/videos"
+      },
+      {
+        "name": "Client 4",
+        "url": "https://i.postimg.cc/FHFYgYxT/client-4.jpg",
+        "href": "https://www.youtube.com/@IMDHME5"
+      },
+      {
+        "name": "Client 5",
+        "url": "https://i.postimg.cc/6qd8zRSm/client-5.jpg",
+        "href": "https://www.youtube.com/@iDarkSnake"
+      }
+      ,
+      {
+        "name": "Client 6",
+        "url": "https://i.postimg.cc/t4rYr9Sp/client-6.jpg",
+        "href": "https://www.youtube.com/@onofix"
+      }
+      ,
+      {
+        "name": "Client 7",
+        "url": "https://i.postimg.cc/pXHhrG5b/client-7.jpg",
+        "href": "#"
+      }
+      ,
+      {
+        "name": "Client 8",
+        "url": "https://i.postimg.cc/mZM1bfDy/client-8.jpg",
+        "href": "https://www.youtube.com/channel/UCvvfQR_FoKsis54V8wN_iLw"
+      }
+      ,
+      {
+        "name": "Client 9",
+        "url": "https://yt3.googleusercontent.com/o78jdGQi5Shn_R6FzxMxcsO35GXYY6-qkYeqx1bboa8or-LanQ-9e7cCzytT3qsgKB7Vor25eWY=s176-c-k-c0x00ffffff-no-rj",
+        "href": "https://www.youtube.com/@Hmoabdullah"
+      }
+      ,
+      {
+        "name": "Client 10",
+        "url": "https://yt3.googleusercontent.com/4u_LPv8ICJ0srvDUNCi16cKl6xozF3N4uZPuRYiqJ1sKoICncVET5338qdgiQ3gfvRR_pXlIAg=s176-c-k-c0x00ffffff-no-rj",
+        "href": "https://www.youtube.com/@Just_M7MD"
+      }
+      
     ]
   }

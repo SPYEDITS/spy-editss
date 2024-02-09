@@ -170,7 +170,7 @@ p {
 
 /* Hero Section */
 #hero {
-	background-image: url(./hero-bg.jpg);
+	background-image: url(./img/hero-bg.jpg);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
@@ -405,35 +405,29 @@ bottom:  -45px;
 	margin: 0 auto;
 	padding: 100px 20px;
 }
-#about .col-left {
-	width: 250px;
-	height: 360px;
-}
-#about .col-right {
-	width: 100%;
-}
-#about .col-right h2 {
+
+#about  h2 {
 	font-size: 1.8rem;
 	font-weight: 500;
 	letter-spacing: 0.2rem;
 	margin-bottom: 10px;
 }
-#about .col-right p {
+#about  p {
 	margin-bottom: 20px;
 }
-#about .col-right .cta {
+#about  .cta {
 	color: rgb(255, 255, 255);
 	margin-bottom: 50px;
 	padding: 10px 20px;
 	font-size: 2rem;
 }
-#about .col-left .about-img {
+#about  .about-img {
 	height: 100%;
 	width: 100%;
 	position: relative;
 	border: 10px solid white;
 }
-#about .col-left .about-img::after {
+#about  .about-img::after {
 	content: '';
 	position: absolute;
 	left: -33px;
@@ -444,7 +438,7 @@ bottom:  -45px;
 	z-index: -1;
 }
 
-.col-right h3,
+#about h3,
 h2 {
   color: white;
 }
@@ -888,7 +882,63 @@ h2 {
     text-decoration: none;
     cursor: pointer;
 }
+@keyframes slide {
+	from {
+		transform: translateX(0);
+	}
 
+	to {
+		transform: translateX(-100%);
+	}
+}
+
+.logos {
+	overflow: hidden;
+	padding: 80px 0;
+	white-space: nowrap;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.logos:before,.logos:after {
+	position: absolute;
+	top: 0;
+	width: 250px;
+	height: 100%;
+	content: "";
+	z-index: 2;
+}
+
+.logos-slide {
+	display: flex;
+	animation: 15s slide infinite linear;
+	justify-content: space-between;
+
+}
+
+.logos-slide img {
+	height: 100%;
+	width: 100%;
+	transition: filter 0.3s ease-in-out
+	
+}
+.logo-container{
+	
+	height: 150px;
+	width: 150px;
+	border-radius: 35% 65% 51% 49% / 78% 66% 34% 22% ;
+	overflow: hidden;
+	border:solid 2px crimson;
+	margin-right: 45px;
+}
+.logo-container img {
+    filter: grayscale(80%); /* Apply grayscale filter to images */
+}
+.logo-container:hover img {
+    filter: none; /* Remove filter on hover */
+}
 /* CSS for the sidebar */
 /* Updated Sidebar CSS */
 

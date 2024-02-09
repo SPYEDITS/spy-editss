@@ -63,4 +63,39 @@ async function fetchProjects() {
   
   // Call the function to create carousel items
   createCarouselItems();
+
+  /* ================= Clients ============ */
+
+    // Function to create logo elements from JSON data
+    function createLogoElementsFromJson(logosData) {
+      return logosData.map(logo => {
+        const logoContainer = document.createElement("div");
+        logoContainer.classList.add("logo-container");
+  
+        const anchor = document.createElement("a");
+        anchor.href = logo.href || "#"; // If href is not provided, fallback to #
+  
+        const image = document.createElement("img");
+        image.src = logo.url;
+        image.alt = logo.name; // Optionally set alt text
+  
+        anchor.appendChild(image);
+        logoContainer.appendChild(anchor);
+  
+        return logoContainer;
+      });
+    }
+  
+    // Fetch data from external JSON file
+    fetch('Projects/projects.json')
+      .then(response => response.json())
+      .then(data => {
+        const logosSlides = document.querySelectorAll(".logos-slide");
+        logosSlides.forEach((slide, index) => {
+          const logosData = data.logos
+          const logos = createLogoElementsFromJson(logosData);
+          slide.append(...logos);
+        });
+      })
+      .catch(error => console.error('Error fetching data:', error));
   
