@@ -31,7 +31,8 @@ html {
 a {
     text-decoration: none !important;
 }
-section:not(#header){
+
+#about,#contact,#hero,#projects{
 	padding: 50px 0;
 }
 .containerr {
@@ -53,6 +54,9 @@ p {
 	line-height: 2.5rem;
 	font-weight: 300;
 	letter-spacing: 0.05rem;
+}
+h1,h2{
+	font-weight: 700;
 }
 .section-title {
 	font-size: 4rem;
@@ -137,7 +141,7 @@ p {
 	left: 0%;
 }
 #header  ul a {
-	font-size: 2.5rem;
+	font-size: 1.8rem;
 	font-weight: 500;
 	letter-spacing: 0.2rem;
 	text-decoration: none;
@@ -215,6 +219,9 @@ p {
 	background-position: top center;
 	position: relative;
 	z-index: 1;
+	height: 100vh;
+	display: flex;
+	align-items: center;
 }
 #hero::after {
 	content: '';
@@ -232,6 +239,7 @@ p {
 	margin: 0 auto;
 	padding: 0 50px;
 	justify-content: flex-start;
+	
 }
 #hero h1 {
 	display: block;
@@ -546,14 +554,16 @@ h2 {
 }
 #footer .footer {
 	min-height: 200px;
+	display: flex;
 	flex-direction: column;
+	align-items: center;
 	padding-top: 50px;
 	padding-bottom: 10px;
 }
-#footer h2 {
+#footer h1 {
 	color: white;
-	font-weight: 500;
-	font-size: 1.8rem;
+	font-weight: 700;
+	
 	letter-spacing: 0.1rem;
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -968,7 +978,7 @@ h2 {
 	
 	height: 150px;
 	width: 150px;
-	border-radius: 35% 65% 51% 49% / 78% 66% 34% 22% ;
+	border-radius: 51% 49% 70% 30% / 30% 63% 37% 70% ;
 	overflow: hidden;
 	border:solid 2px crimson;
 	margin-right: 45px;
